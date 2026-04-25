@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afritalent-Acceuil</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,7 +26,9 @@
                 <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
                 <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                 <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><button id="darkModeToggle">🌙</button></li>
                 <li class="nav-item"><a class="btn btn-primary ms-3" href="#">Rejoindre Afritalent</a></li>
             </ul>
         </div>
@@ -54,7 +58,7 @@
 
                             </div>
                         </div>
-                        <section id="comment-ca-marche">
+                        <section id="comment-ca-marche" >
                             <div class="container" py-5>
                                 <h2>Comment ca marche?</h2>
                                 <div class="row">
@@ -84,7 +88,7 @@
                             </div>
                         </section>
                         <section id="Categories">
-                            <div class="container-py-5">
+                            <div class="container py-5">
                                 <h2>Nos categories de services</h2>
                                 <div class="row">
                                     <div class="col-md-4">
@@ -116,50 +120,58 @@
                             </div>
                         </section>
                         <section id="temoignages">
-                            <div class="container-py-5">
+                            <div class="container py-5">
                                 <h2>Ce que disent nos clients</h2>
-                                <blockquote class="blockquote text-center">
-                                    <p>Afritalent m'as permis de tripler mes revenus en 6 mois!</p>
-                                    <footer class="blockquote-footer">Amina Toure-freelance Marketing</footer>
-                                </blockquote>
-                            </div>
-                            <div class="carousel-item">
-                                <blockquote class="blockquote text-center">
-                                    <p>On a trouve un developpeur excellent en moins de 48h.</p>
-                                     <footer class="blockquote-footer">Moussou Drame-freelance Data Analyst</footer>
-                                </blockquote>
-                            </div>
-                            <div class="carousel-item">
-                                <blockquote class="blockquote text-center">
-                                    <p>La meilleure plateforme pour les talents africains.</p>
-                                    <footer class="blockquote-footer">Aissatou Ndao</footer>
-                                </blockquote>
+                                <div id="carouseltemoignages" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <blockquote class="blockquote text-center">
+                                                <img src="images/IMG_7767.jpeg" alt="photo Khadija sall">
+                                                <p>Afritalent m'a permis de tripler mes revenus en 5 mois!</p>
+                                                <footer class="blockquote-footer">Khadija Sall-freelance Marketing</footer>
+                                                <div>⭐⭐⭐⭐⭐</div>
+                                            </blockquote>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <blockquote class="blockquote text-center">
+                                                <img src="images/IMG_7765.jpeg" alt="photo Moussou Drame">
+                                                <p>Afritalent est la meilleure plateforme pour les talents africains.</p>
+                                                <footer class="blockquote-footer">Moussou Drame-freelance Data Analyst</footer>
+                                            </blockquote>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <blockquote class="blockquote text-center">
+                                                <img src="images/IMG_7768.jpeg" alt="photo Pascal Celeste">
+                                                <p>On a trouve un developpeur en moins de 48h.</p>
+                                                <footer class="blockquote-footer">Pascal celeste-freelance Genie Logiciel</footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev"data-bs-target="#carouseltemoignages"data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next"data-bs-target="#carouseltemoignages"data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
                             </div>
                         </section>
                         <section id="cta">
-                            <div class="container-py-5 text-center">
-                                <h2>Pret a rejoindre Afritalent ?</h2>
-                                <a href="contact.html" class="btn btn-outline-primary btn-lg">S'inscrire gratuitement</a>
+                            <div class="container py-5 text-center">
+                                <h2>Pret a rejoindre Afritalent?</h2>
+                                <a href="contact.html" class="btn btn-primary">S'inscrire gratuitement</a>
                             </div>
                         </section>
-                     
-            </div>
-        </section>
-    </main>
     <footer>
-        <div class="container-py-4">
+        <div class="container py-4">
             <div class="row">
                 <div class="col-md-3">
                     <img src="images/DC664157-3EB7-4E74-A8DB-6AE48C035BEC.png" alt="logo Afritalent" width="120">
                     <h5>Afritalent</h5>
-                    <p>La plateforme de reference pour les freelances tech africains.</p>
-                     <a href="#"><i class="bi bi-tiktok"></i></a>
-                     <a href="#"><i class="bi bi-facebook"></i></a>
-                      <a href="#"><i class="bi bi-instagram"></i></a>
-                    
-                </div>
-                <div class="col-md-3">
-                    <h5>Liens utiles</h5>
+                        <p>La plateforme de reference pour les talents africains.</p>
+                            </div>
+                                 <div class="col-md-3">
+                                     <h5>Liens utiles</h5>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="freelances.html">Freelances</a></li>
@@ -178,12 +190,15 @@
                     <p>contact@afritalent.com</p>
                     <p>Tel:+221 77-088-52-41</p>
                     <p>Adresse:Dakar,senegal</p>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-tiktok"></i></a>
                 </div>
             </div>
-            <p>&copy; <span id="annee"></span>
-            Afritalent.Tous droits reserves.
-        </p>
+            <p>&copy; <span id="annee"></span> Afritalent.Tous droits reserves.</p>
         </div>
+                            
+                               
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afritalent-Freelances</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,12 +22,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link active" href="freelances.html">Freelances</a></li>
                 <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                 <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                <li class="nav-item"><a class="btn btn-primary ms-3" href="#">Rejoindre Afritalent</a></li>
+                <li class="nav-item"><button id="darkModeToggle">🌙</button></li>
+                <li class="nav-item"><a class="btn btn-primary ms-3" href="freelances.html">Rejoindre Afritalent</a></li>
             </ul>
         </div>
         </div>
@@ -33,14 +37,13 @@
     </header>
     <main>
         <section id="titre">
-            <div class="container-py-5">
+            <div class="container py-5">
                 <h1>Nos freelances</h1>
                 <p>Decouvrez nos talents tech africains disponible pour vos projets.</p>
             </div>
         </section>
         <section id="filtres">
             <div class="container">
-                <button class="btn btn-outline-primary" onclick="filtrer(tous)">Tous</button>
                 <button class="btn btn-outline-primary" onclick="filtrer(dev)">Devellopement web</button>
                 <button class="btn btn-outline-primary" onclick="filtrer(design)">Design</button>
                 <button class="btn btn-outline-primary" onclick="filtrer(marketing)">Marketing Digital</button>
@@ -51,134 +54,134 @@
             </div>
         </section>
         <section  id="grille-freelances">
-            <div class="container-py-5">
+            <div class="container py-5">
                 <div class="row" id="liste-freelances">
                     <!--freelance1-->
                     <div class="col-md-4 mb-4 carte-freelance"data-categorie="dev">
                         <div class="card">
-                            <img src="images/IMG_7596.jpeg" class="card-img-top" alt="">
+                            <img src="images/IMG_7596 (1).jpeg" class="card-img-top" alt="photoPascale" id="photopascale">
                             <div class="card-body"></div>
-                            <h5 class="card-title">pascale</h5>
+                            <h5 class="card-title">pascale Mbaye</h5>
                             <h6>Developpeur web</h6>
                             <p class="card-text">Expert en technologie web avec 6ans d'experience.</p>
                             <p>25 000FCFA/h</p>
-                            <p></p>
+                            <p>⭐⭐⭐⭐⭐</p>
                             <button class="btn btn-outline-primary">voir le profil</button>
                         </div>
 
                     </div>
-                </div>
+                
                 <!--freelance2-->
                  <div class="col-md-4 mb-4 carte-freelance"data-categorie="design">
                         <div class="card">
-                            <img src="images/IMG_7592.jpeg" class="card-img-top" alt="">
-                            <div class="card-body"></div>\
+                            <img src="images/IMG_7592.jpeg" class="card-img-top" alt="photoAmina">
+                            <div class="card-body"></div>
                             <h5 class="card-title">Amina Toure</h5>
                             <h6>Design</h6>
                             <p class="card-text">Expert en design.</p>
                             <p>20 000FCFA/h</p>
-                            <p></p>
+                            <p>⭐⭐⭐⭐⭐</p>
                             <button class="btn btn-outline-primary">voir le profil</button>
                         </div>
 
-                    </div>
-                </div>
+                 </div>
+               
                 <!--freelance3-->
                  <div class="col-md-4 mb-4 carte-freelance"data-categorie="Marketing">
                         <div class="card">
-                            <img src="images/IMG_7583.jpeg" class="card-img-top" alt="">
+                            <img src="images/IMG_7583.jpeg" class="card-img-top" alt="photoaissatou" id="photoaissatou">
                             <div class="card-body"></div>
                             <h5 class="card-title">Aissatou ndao</h5>
                             <h6>Marketing</h6>
                             <p class="card-text">Specialiste en reseau sociaux.</p>
                             <p>15 000FCFA/h</p>
-                            <p></p>
+                            <p>⭐⭐⭐⭐⭐</p>
                             <button class="btn btn-outline-primary">voir le profil</button>
                         </div>
 
-                    </div>
-                </div>
+                 </div>
+               
                 <!--freelance4-->
                  <div class="col-md-4 mb-4 carte-freelance"data-categorie="data">
                         <div class="card">
-                            <img src="images/IMG_7598.jpeg" class="card-img-top" alt="">
-                            <div class="card-body"></div>\
-                            <h5 class="card-title">omar</h5>
+                            <img src="images/IMG_7598.jpeg" class="card-img-top" alt="photomar" id="photoomar">
+                            <div class="card-body"></div>
+                            <h5 class="card-title">Omar Sene</h5>
                             <h6>Data scientist</h6>
                             <p class="card-text">Expert en python et machine learning.</p>
                             <p>30 000FCFA/h</p>
-                            <p></p>
+                            <p>⭐⭐⭐⭐⭐</p>
                             <button class="btn btn-outline-primary">voir le profil</button>
                         </div>
 
-                    </div>
-                </div>
+                 </div>
+               
                 <!--freelance5-->
                  <div class="col-md-4 mb-4 carte-freelance"data-categorie="logiciel">
                         <div class="card">
-                            <img src="images/IMG_7599.jpeg" class="card-img-top" alt="">
-                            <div class="card-body"></div>\
-                            <h5 class="card-title">Rony</h5>
+                            <img src="images/IMG_7599.jpeg" class="card-img-top" alt="photorony">
+                            <div class="card-body"></div>
+                            <h5 class="card-title">Rony Diop</h5>
                             <h6>Genie logiciel</h6>
                             <p class="card-text">Expert en logiciel .</p>
                             <p>10 000FCFA/h</p>
-                            <p></p>
+                            <p>⭐⭐⭐⭐⭐</p>
                             <button class="btn btn-outline-primary">voir le profil</button>
                         </div>
 
-                    </div>
-                </div>
+                 </div>
+              
                 <!--freelance6-->
                  <div class="col-md-4 mb-4 carte-freelance"data-categorie="dev">
                         <div class="card">
-                            <img src="images/IMG_7595.jpeg" class="card-img-top" alt="">
-                            <div class="card-body"></div>\
-                            <h5 class="card-title">Aicha</h5>
+                            <img src="images/IMG_7595.jpeg" class="card-img-top" alt="photoaicha">
+                            <div class="card-body"></div>
+                            <h5 class="card-title">Aicha Bousso</h5>
                             <h6>Gestion</h6>
                             <p class="card-text">Specialiste en gestion des ressources humaines.</p>
                             <p>15 000FCFA/h</p>
-                            <p></p>
+                            <p>⭐⭐⭐⭐⭐</p>
                             <button class="btn btn-outline-primary">voir le profil</button>
                         </div>
 
-                    </div>
-                </div>
+                 </div>
+                
                 <!--freelance7-->
                  <div class="col-md-4 mb-4 carte-freelance"data-categorie="dev">
                         <div class="card">
-                            <img src="images/IMG_7600.jpeg" class="card-img-top" alt="">
-                            <div class="card-body"></div>\
-                            <h5 class="card-title">Rahmane</h5>
+                            <img src="images/IMG_7600.jpeg" class="card-img-top" alt="photorahmane">
+                            <div class="card-body"></div>
+                            <h5 class="card-title">Rahmane Mbaye</h5>
                             <h6>Developpeur mobile</h6>
                             <p class="card-text">Specialiste flutter.</p>
                             <p>23 000FCFA/h</p>
-                            <p></p>
+                            <p>⭐⭐⭐⭐⭐</p>
                             <button class="btn btn-outline-primary">voir le profil</button>
                         </div>
 
-                    </div>
-                </div> 
+                 </div>
+                 
                 <!--freelance8-->
                 <div class="col-md-4 mb-4 carte-freelance"data-categorie="dev">
                         <div class="card">
-                            <img src="images/IMG_7589.jpeg" class="card-img-top" alt="">
-                            <div class="card-body"></div>\
-                            <h5 class="card-title"></h5>
+                            <img src="images/IMG_7589.jpeg" class="card-img-top" alt="phototidiane">
+                            <div class="card-body"></div>
+                            <h5 class="card-title">Tidiane Sow</h5>
                             <h6>Graphiste</h6>
                             <p class="card-text">Creation de logos et identites visuelles.</p>
                             <p>18 000FCFA/h</p>
-                            <p></p>
+                            <p>⭐⭐⭐⭐⭐</p>
                             <button class="btn btn-outline-primary">voir le profil</button>
                         </div>
 
-                    </div>
-                </div>
+                 </div>
+                
                 <!--freelance9-->
                  <div class="col-md-4 mb-4 carte-freelance"data-categorie="data">
                         <div class="card">
-                            <img src="images/IMG_7597.jpeg" class="card-img-top" alt="">
-                            <div class="card-body"></div>\
-                            <h5 class="card-title">Fatou</h5>
+                            <img src="images/IMG_7597 (1).jpeg" class="card-img-top" alt="photofatou" id="photofatou">
+                            <div class="card-body"></div>
+                            <h5 class="card-title">Fatou Gueye</h5>
                             <h6>Data Analyst</h6>
                             <p class="card-text">Experte en analyse de donnees et IA.</p>
                             <p>32 000FCFA/h</p>
@@ -186,9 +189,9 @@
                             <button class="btn btn-outline-primary">voir le profil</button>
                         </div>
 
-                    </div>
-                </div>
-            </div>
+                 </div>
+                
+           
         </div>
         </section>
     </main>
@@ -223,12 +226,13 @@
                     <h5>Contact</h5>
                     <p>contact@afritalent.com</p>
                     <p>Tel:+221 77-088-52-41</p>
-                    <p>Adresse:Dakar,senegal</p>
+                    <p>Adresse:Dakar,senegal</p> 
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-tiktok"></i></a>
                 </div>
             </div>
-            <p>&copy; <span id="annee"></span>
-            Afritalent.Tous droits reserves.
-        </p>
+            <p>&copy; <span id="annee"></span>Afritalent.Tous droits reserves.</p>
         </div>
                 </div>
             </div>

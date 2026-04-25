@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afritalent-A propos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,11 +22,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
                 <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
                 <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
+                <li class="nav-item"><a class="nav-link active" href="about.html">A propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><button id="darkModeToggle">🌙</button></li>
                 <li class="nav-item"><a class="btn btn-primary ms-3" href="#">Rejoindre Afritalent</a></li>
             </ul>
         </div>
@@ -32,7 +36,7 @@
     </nav>
     <main>
         <section id="histoire">
-            <div class="container-py-5">
+            <div class="container py-5">
                 <div class="row">
                     <div class="col-md-6">
                         <h2>Notre histoire</h2>
@@ -46,44 +50,52 @@
             </div>
         </section>
         <section id="equipe">
-            <div class="container-py-5">
+            <div class="container py-5">
                 <h2>Notre equipe</h2>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="card">
-                            <img src="images/IMG_7590.jpeg" class="card-img-top" alt="Elhadj Drame">
+                            <img src="images/IMG_7590.jpg" class="card-img-top" alt="Elhadj Drame">
                             <div class="card-body text-center">
                                 <h5>Elhadj Drame</h5>
                                 <p>Fondateur</p>
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="card">
-                            <img src="images/IMG_7584.jpeg" class="card-img-top" alt="Astou Diop">
+                            <img src="images/IMG_7584.jpg" class="card-img-top" alt="Astou Diop">
                             <div class="card-body text-center">
                                 <h5>Astou Diop</h5>
                                 <p>Directrice technique</p>
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
 
                             </div>
                         </div>
                     </div>
                      <div class="col-md-3">
                         <div class="card">
-                            <img src="images/IMG_7701.jpeg" class="card-img-top" alt="Dieynaba Keita">
+                            <img src="images/IMG_7701.jpg" class="card-img-top" alt="Dieynaba Keita">
                             <div class="card-body text-center">
                                 <h5>Dieynaba Keita</h5>
                                 <p>Directeur Marketing</p>
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
 
                             </div>
                         </div>
                     </div>
                        <div class="col-md-3">
                         <div class="card">
-                            <img src="images/IMG_7593.jpeg" class="card-img-top" alt="Moussou Drame">
+                            <img src="images/IMG_7593.jpg" class="card-img-top" alt="Soukeyna Ndiaye">
                             <div class="card-body text-center">
-                                <h5>Moussou Drame</h5>
+                                <h5>Soukeyna Ndiaye</h5>
                                 <p>Responsable support</p>
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
 
                             </div>
                         </div>
@@ -92,7 +104,7 @@
             </div>
         </section>
         <section id="valeurs">
-            <div class="container-py-5">
+            <div class="container py-5">
                 <h2>Nos valeurs</h2>
                 <div class="row">
                     <div class="col-md-3">
@@ -108,14 +120,14 @@
                         <p>Nous construisons une communaute solidaire de freelances africains.</p>
                     </div>
                     <div class="col-md-3">
-                        <h4>Exellence</h4>
+                        <h4>Excellence</h4>
                         <p>Nous visions l'excellence dans chaque mission realisee sur notre plateforme.</p>
                     </div>
                 </div>
             </div>
         </section>
         <section id="chiffres">
-            <div class="container-py-5 text-center">
+            <div class="container py-5 text-center">
                 <h2>Nos chiffres</h2>
                 <div class="row">
                     <div class="col-md-3">
@@ -139,7 +151,7 @@
         </section>
     </main>
     <footer>
-        <div class="container-py-4">
+        <div class="container py-4">
             <div class="row">
                 <div class="col-md-3">
                     <img src="images/DC664157-3EB7-4E74-A8DB-6AE48C035BEC.png" alt="logo Afritalent" width="120">
@@ -170,11 +182,12 @@
                     <p>contact@afritalent.com</p>
                     <p>Tel:+221 77-088-52-41</p>
                     <p>Adresse:Dakar,senegal</p>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-tiktok"></i></a>
                 </div>
             </div>
-            <p>&copy; <span id="annee"></span>
-            Afritalent.Tous droits reserves.
-        </p>
+            <p>&copy; <span id="annee"></span>Afritalent.Tous droits reserves.</p>
         </div>
                 </div>
             </div>

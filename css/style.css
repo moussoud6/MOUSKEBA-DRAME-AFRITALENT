@@ -18,10 +18,11 @@
 body{
     font-family: var(--police-corps);
     color: var(--couleur-texte);
-    background-color:var(--couleur-fond) !important;
+    background-color:var(--couleur-fond);
     line-height: 1.6;
-    overflow-x: hidden !important;
+    overflow-x: hidden ;
 }
+
 .container,
 .container-fluid,
 .row{
@@ -85,117 +86,120 @@ img{
     color: var(--couleur-blanc) !important;
     border-radius: var(--rayon-bordure);
     padding: 10px 24px;
-    font-family: var(--police-corps);
-    
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 .btn-primary:hover,
 .btn-outline-primary:hover{
-    background-color:black!important;
-    border-color:black !important ;
+    background-color:black !important;
+    border-color:black !important;
 }
-#hero{
-    background-color: var(--couleur-fond);
-    padding: 80px 0;
+
+#cta .btn-primary{
+    background-color: var(--couleur-fond) !important;
+    border-color: var(--couleur-fond) !important;
+}
+#cta .btn-primary:hover{
+    background-color: black !important;
+    border-color:black!important;
+}
+#titre{
     text-align: center;
-    min-height: 70vh;
+    padding: 80px 0;
+    background-color: var(--couleur-fond);
 }
-#hero h1{
+#hero {
+     background-color: var(--couleur-fond);
+     padding: 80px 0;
+     text-align: center;
+     min-height: 70vh; 
+} 
+#hero h1 { 
     font-size: 48px;
-    margin-bottom: 16px;
-    color: var(--couleur-blanc);
+    margin-bottom: 16px; 
 }
-#hero p{
+#hero p { 
     font-size: 18px;
     margin-bottom: 32px;
-    color: var(--couleur-blanc);
 }
-#hero .hero-btns
-{
+#hero .btn {
+    margin-right: 16px;
     margin-bottom: 48px;
-}#hero .btn{
-    margin-right: 25px;
-    margin-bottom: 25px;
-    
-}
-.counter{
-    color: var(--couleur-primaire);
+} 
+.counter {
+    color: var(--couleur-primaire); 
     font-size: 48px;
     font-weight: 700;
     font-family: var(--police-titre);
-}
-#comment-ca-marche{
+} 
+#comment-ca-marche {
     padding: 80px 0;
-    background-color: var(--couleur-fond);
+    background-color: var(--couleur-fond); 
 }
-#comment-ca-marche h2{
+#comment-ca-marche h2 {
     text-align: center;
     margin-bottom: 48px;
     font-size: 36px;
-    color: var(--couleur-blanc);
+} 
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); gap: 24px;
 }
-#comment-ca-marche h3,
-#comment-ca-marche h4{
-    color: var(--couleur-blanc);
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-#comment-ca-marche p{
-    color: var(--couleur-blanc);
-    font-size: 14px;
-}
-#categories{
-    padding: 80px 0;
-    background-color: var(--couleur-fond);  
-}
-#categories h2{
-    text-align: center;
-    margin-bottom: 48px;
-    font-size: 36px;
-    color: var(--couleur-blanc);
-}
-#categories h3{
-    color: var(--couleur-blanc);
-    font-size: 18px;
-    margin-bottom: 8px;
-}
-#categories p{
-    color: var(--couleur-blanc);
-    font-size: 14px;
-}
-#categories .col-md-4{
-    text-align: center;
-    padding: 24px;
+.bento-card {
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: var(--rayon-bordure);
-    transition: all 0.3s ease;
-    margin-bottom: 16px;
+    padding: 24px;
 }
-#categories .col-md-4:hover{
-    background-color: var(--couleur-primaire);
+.bento-large {
+    grid-column: span 2;
 }
-#temoignages{
+.bento-wide {
+    grid-column: span 3;
+}
+.step-number {
+    font-size: 48px; 
+    font-weight: 700; 
+    color: var(--couleur-primaire); 
+} 
+#categories { 
+    padding: 80px 0; 
+    background-color: var(--couleur-fond); 
+}
+#categories h2 { 
+    text-align: center; 
+    margin-bottom: 48px; 
+}
+#categories .col-md-4 { 
+    text-align: center; 
+    padding: 24px; 
+    border-radius: var(--rayon-bordure); 
+    transition: all 0.3s ease; 
+    margin-bottom: 16px; 
+}
+#Categories .col-md-4:hover { 
+    background-color: black; 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); 
+}
+#temoignages { 
     padding: 80px 0;
     background-color: var(--couleur-fond);
-    text-align: center;
+    text-align: center; 
+} 
+#temoignages h2 { 
+    margin-bottom: 48px; 
 }
-#temoignages h2{
-    margin-bottom: 48px;
-    font-size: 36px;
-    color: var(--couleur-blanc);
+ #temoignages img {
+    width: 80px; height: 80px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    object-position: center center; 
+    margin-bottom: 16px; 
 }
-#temoignages p{
-    color: var(--couleur-blanc);
-}
-#temoignages img{
-    width: 80px;
-    height: 80px;
-    border-radius:50% ;
-    object-fit: cover;
-    margin-bottom: 16px;
-}
-#cta{
-    padding: 80px 0;
-    background-color: var(--couleur-primaire);
-    text-align: center;
+#cta { 
+    padding: 80px 0; 
+    background-color: var(--couleur-primaire); 
+    text-align: center; 
 }
 #cta h2{
     font-size: 36px;
@@ -230,9 +234,6 @@ img{
     background-color: var(--couleur-fond);
     color: var(--couleur-blanc);
 }
-
-
-
 .card-freelance .card{
      border-radius: var(--rayon-bordure);
     overflow: hidden;
@@ -491,5 +492,7 @@ footer p:last-child{
     padding-top: 16px;
     margin-top: 32px;
 }
+
+
 
 

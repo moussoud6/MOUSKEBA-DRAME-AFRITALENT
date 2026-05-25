@@ -6,7 +6,6 @@
     <title>Afritalent-Freelances</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,7 +22,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navMenu">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link " href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
                         <li class="nav-item"><a class="nav-link active" href="freelances.html">Freelances</a></li>
                         <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
@@ -34,6 +33,7 @@
                 </div>
             </div>
         </nav>
+    </header>
     <main>
         <section id="titre">
             <div class="container py-5">
@@ -43,7 +43,6 @@
         </section>
         <section id="filtres">
             <div class="container">
-
                 <button class="btn btn-outline-primary" onclick="filtrer('tous')">Tous</button>
                 <button class="btn btn-outline-primary" onclick="filtrer('dev')">Devellopement web</button>
                 <button class="btn btn-outline-primary" onclick="filtrer('design')">Design</button>
@@ -53,13 +52,12 @@
                 <button class="btn btn-outline-primary" onclick="filtrer('gestion')">Gestion</button>
             </div>
         </section>
-        <section  id="grille-freelances">
+        <section id="grille-freelances">
             <div class="container py-5">
                 <div class="row" id="liste-freelances">
                     <!--freelance1-->
-                    <div class="col-md-4 mb-4 carte-freelance"data-categorie="dev">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 carte-freelance" data-categorie="dev">
                         <div class="card">
-
                             <img src="images/IMG_7596 (1).jpeg" class="card-img-top" alt="photo de pascale">
                             <div class="card-body">
                                 <h5 class="card-title">Pascale Mbaye</h5>
@@ -75,12 +73,10 @@
                                 </p>
                                 <button class="btn btn-outline-primary">Voir le profil</button>
                             </div>
-                           
                         </div>
                     </div>
-
                     <!--freelance2-->
-                    <div class="col-md-4 mb-4 carte-freelance"data-categorie="design">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 carte-freelance" data-categorie="design">
                         <div class="card">
                             <img src="images/IMG_7592.jpeg" class="card-img-top" alt="photo d'amina">
                             <div class="card-body">
@@ -97,14 +93,13 @@
                                 </p>
                                 <button class="btn btn-outline-primary">Voir le profil</button>
                             </div>
-
                         </div>
                     </div>
                     <!--freelance3-->
-                    <div class="col-md-4 mb-4 carte-freelance"data-categorie="marketing">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 carte-freelance" data-categorie="marketing">
                         <div class="card">
                             <img src="images/IMG_7583.jpeg" class="card-img-top" alt="photo d'aissatou">
-                                <div class="card-body">
+                            <div class="card-body">
                                 <h5 class="card-title">Aissatou Ndao</h5>
                                 <h6>Marketing</h6>
                                 <p class="card-text">Specialiste en reseau sociaux.</p>
@@ -121,7 +116,7 @@
                         </div>
                     </div>
                     <!--freelance4-->
-                    <div class="col-md-4 mb-4 carte-freelance"data-categorie="data">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 carte-freelance" data-categorie="data">
                         <div class="card">
                             <img src="images/IMG_7598.jpeg" class="card-img-top" alt="photo d'omar">
                             <div class="card-body">
@@ -141,7 +136,7 @@
                         </div>
                     </div>
                     <!--freelance5-->
-                    <div class="col-md-4 mb-4 carte-freelance"data-categorie="logiciel">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 carte-freelance" data-categorie="logiciel">
                         <div class="card">
                             <img src="images/IMG_7599.jpeg" class="card-img-top" alt="photo de Rony">
                             <div class="card-body">
@@ -161,7 +156,7 @@
                         </div>
                     </div>
                     <!--freelance6-->
-                    <div class="col-md-4 mb-4 carte-freelance"data-categorie="gestion">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 carte-freelance" data-categorie="gestion">
                         <div class="card">
                             <img src="images/IMG_7595.jpeg" class="card-img-top" alt="photo d'aicha">
                             <div class="card-body">
@@ -181,9 +176,9 @@
                         </div>
                     </div>
                     <!--freelance7-->
-                    <div class="col-md-4 mb-4 carte-freelance"data-categorie="dev">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 carte-freelance" data-categorie="dev">
                         <div class="card">
-                            <img src="images/IMG_7600.jpeg" class="card-img-top" alt=" photo de rahmane">
+                            <img src="images/IMG_7600.jpeg" class="card-img-top" alt="photo de rahmane">
                             <div class="card-body">
                                 <h5 class="card-title">Rahmane Diallo</h5>
                                 <h6>Developpeur mobile</h6>
@@ -201,7 +196,7 @@
                         </div>
                     </div>
                     <!--freelance8-->
-                    <div class="col-md-4 mb-4 carte-freelance"data-categorie="design">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 carte-freelance" data-categorie="design">
                         <div class="card">
                             <img src="images/IMG_7589.jpeg" class="card-img-top" alt="photo de tidiane">
                             <div class="card-body">
@@ -221,7 +216,7 @@
                         </div>
                     </div>
                     <!--freelance9-->
-                    <div class="col-md-4 mb-4 carte-freelance"data-categorie="data">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 carte-freelance" data-categorie="data">
                         <div class="card">
                             <img src="images/IMG_7597 (1).jpeg" class="card-img-top" alt="photo de fatou">
                             <div class="card-body">
@@ -251,11 +246,10 @@
                     <img src="images/DC664157-3EB7-4E74-A8DB-6AE48C035BEC.png" alt="logo Afritalent" width="120">
                     <h5>Afritalent</h5>
                     <p>La plateforme de reference pour les freelances tech africains.</p>
-                     <a href="#"><i class="bi bi-tiktok"></i></a>
-                     <a href="#"><i class="bi bi-facebook"></i></a>
-                      <a href="#"><i class="bi bi-instagram"></i></a>
-                    
-                    </div>
+                    <a href="#"><i class="bi bi-tiktok"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
                 <div class="col-md-3">
                     <h5>Liens utiles</h5>
                     <ul>
@@ -275,8 +269,7 @@
                     <h5>Contact</h5>
                     <p>contact@afritalent.com</p>
                     <p>Tel:+221 77-088-52-41</p>
-                    <p>Adresse:Dakar,senegal</p> 
-                    
+                    <p>Adresse:Dakar,senegal</p>
                 </div>
             </div>
             <p>&copy; <span id="annee"></span>

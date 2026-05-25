@@ -492,7 +492,56 @@ footer p:last-child{
     padding-top: 16px;
     margin-top: 32px;
 }
-
-
+@media (max-width:768px) {
+    #hero h1{
+    font-size: 32px;
+    }
+    #hero p{
+    font-size: 16px;
+    }
+    .bento-grid{
+    grid-template-columns: 1fr;
+    }
+    .bento-large,
+    .bento-wide{
+    grid-column: span 1;
+    }
+    #liste-freelances{
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .counter{
+    font-size: 32px;
+    }   
+}
+@media (max-width:375px){
+    #hero h1{
+        font-size: 24px;
+    }
+    #hero .btn{
+        display: block;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    #liste-freelances{
+        grid-template-columns: 1fr;
+    }
+    .counter{
+        font-size: 24px;
+    }
+    #plans .col-md-4{
+        margin-bottom: 24px;
+    }
+}
+@media (min-width:1200px) {
+    #hero h1{
+        font-size: 64px;
+    }
+    .bento-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #liste-freelances{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 

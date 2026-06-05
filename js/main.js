@@ -39,3 +39,41 @@ btnRetourHaut.addEventListener("click", function() {
         behavior: "smooth"
     });
 });
+const compteurs = document.querySelectorAll(".counter");
+const animerCompteur = (compteur) => {
+    const cible = parseInt(compteur.getAttribute("data-target"));
+    const duree = 2000;
+    const increment = cible / (duree / 16);
+    let valeurActuelle = 0;
+    const timer = setInterval(() => {
+        valeurActuelle += increment;
+        if (valeurActuelle >= cible) {
+            compteur.textContent = cible +"+";
+            clearInterval(timer);
+        } else {
+            compteur.textContent = Math.floor(valeurActuelle);
+        }
+    }, 16);
+};
+const observateurcompteur = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            animerCompteur(entry.target);
+            observateurcompteur.unobserve(entry.target);
+        }
+    });
+
+});
+compteurs.forEach((compteur) => {    observateurcompteur.observe(compteur);
+});
+const sections = document.querySelectorAll("section");
+const observateurSection = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observateurSection.unobserve(entry.target);
+        }
+        });
+    }, { threshold: 0.1 });
+sections.forEach((section) => {
+    observateurSection.observe(section);});  

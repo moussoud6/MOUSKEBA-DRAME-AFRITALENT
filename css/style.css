@@ -20,9 +20,13 @@ body{
     color: var(--couleur-texte);
     background-color:var(--couleur-fond);
     line-height: 1.6;
-    overflow-x: hidden ;
+    overflow-y: scroll !important;
 }
-
+body.dark-mode #hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/IMG_01.jpeg')!important;
+    background-size: cover !important;
+    background-position: center !important;
+}
 .container,
 .container-fluid,
 .row{
@@ -47,7 +51,7 @@ img{
     height: auto;
 }
 #navbar{
-    background-color: var(--couleur-fond) !important;
+    background-color:#1a1a2e !important;
     padding: 16px 0;
     position: sticky;
     top: 0;
@@ -95,11 +99,13 @@ img{
     border-color:black !important;
 }
 
-#filtres.containe {
+#filtres.container {
   display: flex !important;
   flex-wrap: wrap !important;
   gap: 16px !important;
+  justify-content: center !important;
   padding: 32px 16px !important;
+  
 }
 
 #cta .btn-primary{
@@ -116,10 +122,18 @@ img{
     background-color: var(--couleur-fond);
 }
 #hero {
-     background-color: var(--couleur-fond);
-     padding: 80px 0;
-     text-align: center;
-     min-height: 70vh; 
+     
+    padding: 80px 0;
+    text-align: center;
+    min-height: 70vh; 
+    max-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/IMG_01.jpeg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    position: relative;
+    
 } 
 #hero h1 { 
     font-size: 48px;
@@ -565,7 +579,9 @@ footer p:last-child{
     cursor: pointer;
     z-index: 999;
     transition: all 0.3s ease;
+   
 }
+
 #backToTop:hover{
     background-color: var(--couleur-primaire);
 }
@@ -590,4 +606,9 @@ body.dark-mode #cta{
 .fade-in.visible{
     opacity: 1;
     transform: translateY(0);
+}
+.erreur{
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
 }

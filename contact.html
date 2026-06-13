@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Afritalent</a>
             <button class="navbar-toggler" type="button"
@@ -43,50 +43,49 @@
                 <p>Nous sommes la pour repondre a toutes vos questions.</p>
             </div>
         </section>
-        <section id="contact">
+        <section id="contact-form">
             <div class="container py-5">
                 <div class="row">
                     <div class="col-md-6">
                         <h2>Contactez-nous</h2>
-                        <form id="formulaireContact">
+                        <form id="formulaire">
                             <div class="mb-3">
-                                <label for="nom">Nom</label>
+                                <label for="nom" class="form-label">Nom</label>
                                 <input type="text" id="nom" class="form-control"
                                 placeholder="votre nom">
-                                <span class="erreur"
-                                id="erreurNom"></span>
+                                <div class="erreur"
+                                id="erreur-Nom"></div>
                             </div>
                              <div class="mb-3">
-                                <label for="nom">Prenom</label>
+                                <label for="prenom" class="form-label">Prenom</label>
                                 <input type="text" id="prenom" class="form-control"
                                 placeholder="votre prenom">
-                                <span class="erreur"
-                                id="erreurprenom"></span>
+                                <div class="erreur"
+                                id="erreur-Prenom"></div>
                             </div>
                              <div class="mb-3">
-                                <label for="nom">Email</label>
+                                <label for="email" class="form-label">Email</label>
                                 <input type="email" id="email" class="form-control"
                                 placeholder="votre email">
-                                <span class="erreur"
-                                id="erreurEmail"></span>
+                                <div class="erreur"
+                                id="erreur-Email"></div>
                             </div>
                              <div class="mb-3">
-                                <label for="sujet">Sujet</label>
+                                <label for="sujet" class="form-label">Sujet</label>
                                <select id="sujet" class="form-control">
                                 <option value="">-- Choisissez un sujet --</option>
-                                <option value="inscription">Inscription</option>
-                                <option value="paiement">Paiement</option>
-                                <option value="mission">Mission</option>
-                                <option value="mission">Autre</option>
+                                <option value="support">Support</option>
+                                <option value="partenaire">Partenaire</option>
+                                <option value="autre">Autre</option>
                                </select>
-                               <span class="erreur" id="erreursujet"></span>
+                               <div class="erreur" id="erreur-Sujet"></div>
                             </div>
                             <div class="mb-3">
-                                <label for="message">Message</label>
+                                <label for="message" class="form-label">Message</label>
                                 <textarea id="message" class="form-control" rows="5"
                                 placeholder="votre message(20 caracteres minimum)">
                             </textarea>
-                            <span class="erreur" id="erreurMessage"></span>
+                            <div class="erreur" id="erreur-Message"></div>
                             </div>
                             <button type="submit" id="btnEnvoyer" class="btn btn-primary">Envoyer</button>
                             <div id="messagesucces" class="alert alert-success mt-3" style="display: none;">Votre message a ete envoye avec succes!</div>
@@ -99,20 +98,11 @@
                         <p><i class="bi bi-telephone"></i> +221
                         77-088-52-41</p>
                         <p><i class="bi bi-geo-alt"></i> Dakar, Senegal</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246977.84005254295!2d-17.630646107954014!3d14.71096622149036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f5b3c5bb71%3A0xb17c17d92d5db21f!2sDakar!5e0!3m2!1sfr!2ssn!4v1775868133284!5m2!1sfr!2ssn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Carte Afritalent Dakar"></iframe>
-
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246977.84005254295!2d-17.630646107954014!3d14.71096622149036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f5b3c5bb71%3A0xb17c17d92d5db21f!2sDakar!5e0!3m2!1sfr!2ssn!4v1775868133284!5m2!1sfr!2ssn" width="100%" height="450" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Carte Afritalent Dakar"></iframe>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section id="carte">
-            <div class="container py-5">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246977.84005254295!2d-17.630646107954014!3d14.71096622149036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f5b3c5bb71%3A0xb17c17d92d5db21f!2sDakar!5e0!3m2!1sfr!2ssn!4v1775868133284!5m2!1sfr!2ssn" width="600" height="450" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Carte Afritalent Dakar"></iframe>
-            </div>
-        </section>
-
-
     </main>
      
     <footer>
@@ -145,15 +135,14 @@
                     <p>contact@afritalent.com</p>
                     <p>Tel:+221 77-088-52-41</p>
                     <p>Adresse:Dakar,senegal</p>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-tiktok"></i></a>
+                    
                 </div>
             </div>
             <p>&copy; <span id="annee"></span>
             Afritalent.Tous droits reserves.</p>
         </div>
     </footer>
+    <button id="backToTop"><i class="bi bi-arrow-up"></i></button>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>

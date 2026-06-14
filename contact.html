@@ -6,35 +6,31 @@
     <title>Afritalent-Contact</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Afritalent</a>
-            <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navMenu"
-            aria-label="toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
-                <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
-                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                <li class="nav-item"><button id="darkModeToggle">🌙</button></li>
-                <li class="nav-item"><a class="btn btn-primary ms-3 " href="#">Rejoindre Afritalent</a></li>
-            </ul>
-        </div>
-        </div>
-    </nav>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Afritalent</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><button id="darkModeToggle">🌙</button></li>
+                        <li class="nav-item"><a class="btn btn-primary ms-3" href="contact.html">Rejoindre Afritalent</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <section id="titre">
@@ -51,41 +47,33 @@
                         <form id="formulaire">
                             <div class="mb-3">
                                 <label for="nom" class="form-label">Nom</label>
-                                <input type="text" id="nom" class="form-control"
-                                placeholder="votre nom">
-                                <div class="erreur"
-                                id="erreur-Nom"></div>
+                                <input type="text" id="nom" class="form-control" placeholder="votre nom">
+                                <div class="erreur" id="erreur-Nom"></div>
                             </div>
-                             <div class="mb-3">
+                            <div class="mb-3">
                                 <label for="prenom" class="form-label">Prenom</label>
-                                <input type="text" id="prenom" class="form-control"
-                                placeholder="votre prenom">
-                                <div class="erreur"
-                                id="erreur-Prenom"></div>
+                                <input type="text" id="prenom" class="form-control" placeholder="votre prenom">
+                                <div class="erreur" id="erreur-Prenom"></div>
                             </div>
-                             <div class="mb-3">
+                            <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" id="email" class="form-control"
-                                placeholder="votre email">
-                                <div class="erreur"
-                                id="erreur-Email"></div>
+                                <input type="email" id="email" class="form-control" placeholder="votre email">
+                                <div class="erreur" id="erreur-Email"></div>
                             </div>
-                             <div class="mb-3">
+                            <div class="mb-3">
                                 <label for="sujet" class="form-label">Sujet</label>
-                               <select id="sujet" class="form-control">
-                                <option value="">-- Choisissez un sujet --</option>
-                                <option value="support">Support</option>
-                                <option value="partenaire">Partenaire</option>
-                                <option value="autre">Autre</option>
-                               </select>
-                               <div class="erreur" id="erreur-Sujet"></div>
+                                <select id="sujet" class="form-control">
+                                    <option value="">-- Choisissez un sujet --</option>
+                                    <option value="support">Support</option>
+                                    <option value="partenaire">Partenaire</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                                <div class="erreur" id="erreur-Sujet"></div>
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea id="message" class="form-control" rows="5"
-                                placeholder="votre message(20 caracteres minimum)">
-                            </textarea>
-                            <div class="erreur" id="erreur-Message"></div>
+                                <textarea id="message" class="form-control" rows="5" placeholder="votre message(20 caracteres minimum)"></textarea>
+                                <div class="erreur" id="erreur-Message"></div>
                             </div>
                             <button type="submit" id="btnEnvoyer" class="btn btn-primary">Envoyer</button>
                             <div id="messagesucces" class="alert alert-success mt-3" style="display: none;">Votre message a ete envoye avec succes!</div>
@@ -93,10 +81,8 @@
                     </div>
                     <div class="col-md-6">
                         <h2>Nos coordonnees</h2>
-                        <p><i class="bi bi-envelope"></i>
-                        contact@afritalent.com</p>
-                        <p><i class="bi bi-telephone"></i> +221
-                        77-088-52-41</p>
+                        <p><i class="bi bi-envelope"></i> contact@afritalent.com</p>
+                        <p><i class="bi bi-telephone"></i> +221 77-088-52-41</p>
                         <p><i class="bi bi-geo-alt"></i> Dakar, Senegal</p>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246977.84005254295!2d-17.630646107954014!3d14.71096622149036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f5b3c5bb71%3A0xb17c17d92d5db21f!2sDakar!5e0!3m2!1sfr!2ssn!4v1775868133284!5m2!1sfr!2ssn" width="100%" height="450" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Carte Afritalent Dakar"></iframe>
                     </div>
@@ -104,19 +90,16 @@
             </div>
         </section>
     </main>
-     
     <footer>
         <div class="container py-4">
             <div class="row">
                 <div class="col-md-3">
                     <img src="images/DC664157-3EB7-4E74-A8DB-6AE48C035BEC.png" alt="logo Afritalent" width="120">
-                    <h5>Afritalent</h5>
+                    <h3>Afritalent</h3>
                     <p>La plateforme de reference pour les freelances tech africains.</p>
-                    
-                    
                 </div>
                 <div class="col-md-3">
-                    <h5>Liens utiles</h5>
+                    <h4>Liens utiles</h4>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="freelances.html">Freelances</a></li>
@@ -124,22 +107,20 @@
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <h5>Ressources</h5>
+                    <h4>Ressources</h4>
                     <ul>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Support</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <h5>Contact</h5>
+                    <h4>Contact</h4>
                     <p>contact@afritalent.com</p>
                     <p>Tel:+221 77-088-52-41</p>
                     <p>Adresse:Dakar,senegal</p>
-                    
                 </div>
             </div>
-            <p>&copy; <span id="annee"></span>
-            Afritalent.Tous droits reserves.</p>
+            <p>&copy; <span id="annee"></span> Afritalent.Tous droits reserves.</p>
         </div>
     </footer>
     <button id="backToTop"><i class="bi bi-arrow-up"></i></button>

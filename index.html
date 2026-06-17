@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html">Afritalent</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="toggle navigation">
@@ -43,7 +43,7 @@
                         <a href="freelances.html" class="btn btn-outline-primary">je cherche un freelance</a>
                     </div>
                     <div class="col-md-6">
-                        <img src="images/IMG_7585 (1).jpeg" alt="freelance africain travaillant sur un ordinateur" class="img-fluid">
+                        <img src="images/IMG_7585 (1).jpeg" alt="freelance africain travaillant sur un ordinateur" class="img-fluid hero-image">
                     </div>
                 </div>
                 <div class="row mt-5">
@@ -67,7 +67,7 @@
             <div class="container py-5">
                 <h2>Nos categories de services</h2>
                 <div class="row g-4">
-                    <div class="col-md-4">
+                    <div class="col-md-4 fade-in">
                         <div class="card h-100 text-center p-3">
                             <div class="card-body">
                                 <i class="bi bi-code-slash fs-1"></i>
@@ -76,7 +76,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 fade-in">
                         <div class="card h-100 text-center p-3">
                             <div class="card-body">
                                 <i class="bi bi-palette fs-1"></i>
@@ -85,7 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 fade-in">
                         <div class="card h-100 text-center p-3">
                             <div class="card-body">
                                 <i class="bi bi-megaphone fs-1"></i>
@@ -94,7 +94,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 fade-in">
                         <div class="card h-100 text-center p-3">
                             <div class="card-body">
                                 <i class="bi bi-cpu fs-1"></i>
@@ -103,7 +103,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 fade-in">
                         <div class="card h-100 text-center p-3">
                             <div class="card-body">
                                 <i class="bi bi-shield-lock fs-1"></i>
@@ -112,7 +112,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 fade-in">
                         <div class="card h-100 text-center p-3">
                             <div class="card-body">
                                 <i class="bi bi-briefcase fs-1"></i>
@@ -159,48 +159,90 @@
 
         <section id="temoignages">
             <div class="container py-5">
-                <h2>Ce que disent nos clients</h2>
-                <div class="text-center">
-                    <img src="images/IMG_7587.jpeg" alt="Photo de ibrahima sene" width="80px">
-                    <div>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
+                <h2 class="text-center mb-4">Ce que disent nos clients</h2>
+
+            <div id="carouselTemoignages" class="carousel slide text-center" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                        <!-- Témoignage 1 -->
+                        <div class="carousel-item active">
+                            <img src="images/IMG_7587.jpeg" alt="Photo de Ibrahima Sene" width="80" class="rounded-circle">
+
+                            <div class="my-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+
+                            <blockquote class="blockquote">
+                                <p>AfriTalent m'a permis de tripler mes revenus en 6 mois !</p>
+                                <footer class="blockquote-footer">
+                                 Ibrahima Sene - Freelance Marketing
+                                </footer>
+                            </blockquote>
+                        </div>
+
+                        <!-- Témoignage 2 -->
+                        <div class="carousel-item">
+                            <img src="images/IMG_7588.jpeg" alt="Photo de Seydina Sow" width="80" class="rounded-circle">
+
+                            <div class="my-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+
+                            <blockquote class="blockquote">
+                                <p>On a trouvé un développeur excellent en moins de 48h.</p>
+                                <footer class="blockquote-footer">
+                                    Seydina Sow - Freelance Data Analyst
+                                </footer>
+                            </blockquote>
+                        </div>
+
+                        <!-- Témoignage 3 -->
+                        <div class="carousel-item">
+                            <img src="images/IMG_7581.jpeg" alt="Photo de Elhadj Malick" width="80" class="rounded-circle">
+
+                            <div class="my-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                             <i class="bi bi-star-fill"></i>
+                            </div>
+
+                            <blockquote class="blockquote">
+                                <p>La meilleure plateforme pour les talents africains.</p>
+                                <footer class="blockquote-footer">
+                                    Elhadj Malick
+                                </footer>
+                            </blockquote>
+                        </div>
+
                     </div>
-                    <blockquote class="blockquote text-center">
-                        <p>Afritalent m'a permis de tripler mes revenus en 6 mois!</p>
-                        <footer class="blockquote-footer">Ibrahima Sene-freelance Marketing</footer>
-                    </blockquote>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/IMG_7588.jpeg" alt="photo de seydina sow" width="80px">
-                    <div>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                    </div>
-                    <blockquote class="blockquote text-center">
-                        <p>On a trouve un developpeur excellent en moins de 48h.</p>
-                        <footer class="blockquote-footer">Seydina Sow-freelance Data Analyst</footer>
-                    </blockquote>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/IMG_7581.jpeg" alt="Photo de elhadj malick" width="80px">
-                    <div>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                    </div>
-                    <blockquote class="blockquote text-center">
-                        <p>La meilleure plateforme pour les talents africains.</p>
-                        <footer class="blockquote-footer">Elhadj Malick</footer>
-                    </blockquote>
+
+            
+                    <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselTemoignages"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Précédent</span>
+                    </button>
+
+            
+                    <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselTemoignages"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Suivant</span>
+                    </button>
+
                 </div>
             </div>
         </section>
@@ -212,31 +254,31 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="fade-in">
         <div class="container py-4">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 fade-in">
                     <img src="images/DC664157-3EB7-4E74-A8DB-6AE48C035BEC.png" alt="logo Afritalent" width="120">
                     <h5>Afritalent</h5>
                     <p>La plateforme de reference pour les talents africains.</p>
                 </div>
-                <div class="col-md-3">
-                    <h5>Liens utiles</h5>
+                <div class="col-md-3 fade-in">
+                    <h4>Liens utiles</h4>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="freelances.html">Freelances</a></li>
                         <li><a href="tarifs.html">Tarifs</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3">
-                    <h5>Ressources</h5>
+                <div class="col-md-3 fade-in">
+                    <h4>Ressources</h4>
                     <ul>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Support</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3">
-                    <h5>Contact</h5>
+                <div class="col-md-3 fade-in">
+                    <h4>Contact</h4>
                     <p>contact@afritalent.com</p>
                     <p>Tel:+221 77-088-52-41</p>
                     <p>Adresse:Dakar,senegal</p>

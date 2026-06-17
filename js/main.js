@@ -81,8 +81,8 @@ const observateurcompteur = new IntersectionObserver((entries) => {
 compteurs.forEach((compteur) => {    
     observateurcompteur.observe(compteur);
 });
-//FADE-IN au scroll(selection de toutes les sections)
-const sections = document.querySelectorAll("section");
+//FADE-IN au scroll(selection de toutes les sections )
+
 //observation de l'element qui ajoute visible quand une section entre dans l'ecran
 const observateurSection = new
  IntersectionObserver((entries) => {
@@ -93,8 +93,10 @@ const observateurSection = new
         }
     });
 }, { threshold: 0.1 });
-//observation des sections
-sections.forEach((section) => {
+const sections =
+document.querySelectorAll(".fade-in");
+sections.forEach((section) =>
+    {
     observateurSection.observe(section);
 });
 //FILTRAGE FREELANCES(filtrage des cartes freelances selon la categorie cliquee)
@@ -181,4 +183,5 @@ function validerFormulaire() {
         document.getElementById("messagesucces").style.display = "block";
         document.getElementById("formulaire").reset();
     }
-}    
+}
+
